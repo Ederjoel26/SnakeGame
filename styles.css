@@ -1,0 +1,86 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+#board, .boardInfo {
+    max-width: 500px;
+}
+
+#board {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: 5px solid #0c2d6b;
+    background: #0c2d6b;
+    margin: auto;
+}
+
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 25px;
+    margin:auto;
+}
+
+#start {
+    background-color: #f35a69;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.score{
+    font-size: 20px;
+    margin: auto;
+}
+#scoreBoard {
+    text-align: center;
+    margin: auto;
+}
+
+#gameOver {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 43%;
+    font-size: 50px;
+    color: white;
+    width: 500px;
+    height: 500px;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: #0c2d6b;
+    border: 1px solid white;
+}
+
+.snakeSquare {
+    background-color: #00c54c;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.foodSquare {
+    width: 40px;
+    margin: auto;
+    background: rgb(187, 17, 17);
+    border: 1px solid rgb(105, 2, 2);
+    border-radius: 50%;
+}
+.back {
+    background-color: #161b22;
+}
